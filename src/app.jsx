@@ -18,7 +18,7 @@ LRS.registerAll(views);
 const App = () => {
   const Text = ({ location }) => {
 
-    const resource = new URLSearchParams(location.search).get('resource') || "http://localhost:9000/devdata/medicine.ttl";
+    const resource = new URLSearchParams(location.search).get('resource');
     if(!resource) {
       return (
         <p
@@ -41,15 +41,42 @@ const App = () => {
   }
 
   const pathname = new URL(FRONTEND_ROUTE).pathname;
+  const maxWidth = '550px';
 
   return (
     <RenderStoreProvider value={LRS} >
       <BrowserRouter basename={pathname.endsWith('/') ? pathname.slice(0, -1) : pathname}>
-        <h1>OpenPharma.eu</h1>
-        <FileSelector />
-        <Switch>
-          <Route key="resource" path="*" component={Text} />
-        </Switch>
+        <div style={{
+          background: 'black',
+          text: 'center',
+          background: '#c8f0ff',
+          color: '#1b1b48',
+        }}>
+          <div style={{
+              margin: 'auto',
+              maxWidth,
+              padding: '1rem',
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+          }}>
+            <h1 style={{
+            }}>OpenPharma</h1>
+            <a href="https://github.com/ontola/openpharma" style={{
+              justifySelf: 'flex-end',
+            }}>github</a>
+          </div>
+        </div>
+        <div style={{
+          margin: 'auto',
+          maxWidth,
+        }}>
+          <FileSelector />
+          <Switch>
+            <Route key="resource" path="*" component={Text} />
+          </Switch>
+        </div>
       </BrowserRouter>
     </RenderStoreProvider>
   );

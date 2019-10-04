@@ -57,7 +57,7 @@ const FileSelector = ({ history, location }) => {
   return (
     <div style={divStyle}>
       <input
-        placeholder="Enter a pod file here"
+        placeholder="Enter a linked data URL here"
         style={inputStyle}
         type="text"
         value={file}

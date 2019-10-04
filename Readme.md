@@ -1,7 +1,8 @@
 # OpenPharma
 
 OpenPharma.eu a web applicatie to provide insight into how costs of pharmaceuticals differ in various EU countries.
-This app is a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
+
+This app was a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
 
 ## Why?
 
