@@ -1,9 +1,9 @@
 import React from 'react';
-import { defaultNS as NS } from 'link-lib'
 import { LinkedResourceContainer, register } from 'link-redux'
 import Link from '../../components/Link'
 
 import PreviewList from '../../topologies/PreviewList'
+import { NS } from '../../LRS';
 
 const styles = {
   padding: '1em',
