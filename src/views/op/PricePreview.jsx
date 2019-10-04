@@ -11,11 +11,23 @@ const styles = {
 const PricePreview = ({ standardPrice, occurenceDate, country }) => {
 
   const priceString = `€${standardPrice.value.substring(0, standardPrice.value.length-2)}.${standardPrice.value.slice(-2)}`
-  const countryString = new URL(country.value).pathname;
+
+  let countrycode = null;
+  switch (country.value) {
+    case "http://dbpedia.org/page/Netherlands": {
+      countrycode = "NL"
+    };
+    case "http://dbpedia.org/page/Germany": {
+      countrycode =  "DE"
+    };
+    case "http://dbpedia.org/page/Sweden": {
+      countrycode =  "SW"
+    };
+  };
 
   return (
     <div style={styles}>
-      <p><b>{priceString}</b> op {occurenceDate.value} in <Link to={country}>{countryString}</Link></p>
+      <p><b>{priceString}</b> op {occurenceDate.value} in <Link to={country}>{countrycode}</Link></p>
     </div>
   )
 };

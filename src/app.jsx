@@ -47,7 +47,6 @@ const App = () => {
     <RenderStoreProvider value={LRS} >
       <BrowserRouter basename={pathname.endsWith('/') ? pathname.slice(0, -1) : pathname}>
         <div style={{
-          background: 'black',
           text: 'center',
           background: '#c8f0ff',
           color: '#1b1b48',
@@ -62,10 +61,9 @@ const App = () => {
               alignItems: 'center',
           }}>
             <h1 style={{
-            }}>OpenPharma</h1>
-            <a href="https://github.com/ontola/openpharma" style={{
-              justifySelf: 'flex-end',
-            }}>github</a>
+              flex: 1,
+            }}>OpenPharma<span style={{opacity: .5}}>.eu</span></h1>
+            <a href="https://github.com/ontola/openpharma">about</a>
           </div>
         </div>
         <div style={{

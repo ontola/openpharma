@@ -8,19 +8,17 @@ const divStyle = {
 }
 
 const inputStyle = {
-  background: 'rgba(0, 0, 0, 0.003)',
+  background: 'rgba(0, 0, 0, 0)',
   border: 'none',
-  boxShadow: 'inset 0 -2px 1px rgba(0,0,0,0.03)',
-  fontSize: '1.5em',
+  fontSize: '1rem',
   padding: '16px',
   width: '100%',
 }
 
 const buttonStyle = {
   background: 'rgba(0, 0, 0, 0.054)',
-  boxShadow: 'rgba(0, 0, 0, 0.03) 0px -2px 1px inset',
   cursor: 'pointer',
-  padding: '1.1em',
+  padding: '1rem',
 };
 
 const primaryDomainFromIRI = (iri) => {

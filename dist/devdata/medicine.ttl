@@ -4,4 +4,19 @@
 <http://localhost:9000/devdata/medicine.ttl> a op:Medicine ;
 	op:name """Oxycontine"""@nl ;
 	op:statusCode 200;
-	op:price <http://localhost:9000/devdata/price2.ttl>, <http://localhost:9000/devdata/price1.ttl> .
+	op:price <http://localhost:9000/devdata/price2.ttl>, <http://localhost:9000/devdata/price1.ttl> , <http://localhost:9000/devdata/price3.ttl> .
+
+<http://localhost:9000/devdata/price3.ttl> a op:Price ;
+	op:standardPrice 1233;
+	op:occurenceDate "2013-09-24"^^xsd:date;
+	op:country <http://dbpedia.org/page/Germany> .
+
+<http://localhost:9000/devdata/price2.ttl> a op:Price ;
+	op:standardPrice 1200;
+	op:occurenceDate "2012-09-24"^^xsd:date;
+	op:country <http://dbpedia.org/page/Germany> .
+
+<http://localhost:9000/devdata/price1.ttl> a op:Price ;
+	op:standardPrice 1400;
+	op:occurenceDate "2002-09-24"^^xsd:date;
+	op:country <http://dbpedia.org/page/Netherlands> .

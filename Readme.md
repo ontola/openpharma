@@ -25,8 +25,10 @@ This repo does the rendering, using [link](https://github.com/fletcher91/link-li
 ```bash
 # Clone this repo
 git clone git@github.com:ontola/openpharma.git && cd openpharma
+
 # Install dependencies
 yarn
+
 # Run dev environment
 yarn dev
 ```
@@ -34,6 +36,14 @@ yarn dev
 Visit [`http://localhost:9000/?resource=http://localhost:9000/devdata/medicine.ttl`](http://localhost:9000/?resource=http://localhost:9000/devdata/medicine.ttl)
 
 Modify the `/dist/devdata/` files to change local mock data.
+
+## Credits
+
+Created during Accountability Hack 2019 @ Tweede Kamer by [Ontola](https://ontola.io).
+
+- Jurrian Tromp
+- Thom van Kalkeren
+- Joep Meindertmsa
 
 ## License
 

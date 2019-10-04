@@ -11,6 +11,7 @@ const LRS = createStore({}, [
 	solidMiddleware,
 ]);
 
+LRS.namespaces.app = Namespace('http://localhost:9000/');
 LRS.namespaces.ldp = Namespace('http://www.w3.org/ns/ldp#');
 LRS.namespaces.vcard = Namespace('http://www.w3.org/2006/vcard/ns#');
 LRS.namespaces.op = Namespace('http://openpharma.eu/ns/op/');

@@ -7,7 +7,7 @@ import { previewListTopology } from '../topologies/PreviewList'
 
 const LoadingResource = () => (
   <div className="lds-ring">
-    <div></div>
+    <div>loading...</div>
     <div></div>
     <div></div>
     <div></div>
