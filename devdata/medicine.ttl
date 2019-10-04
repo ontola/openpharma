@@ -1,0 +1,7 @@
+@prefix op: <http://openpharma.eu/ns/op/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:9000/devdata/medicine.ttl> a op:Medicine ;
+	op:name """Oxycontine"""@nl ;
+	op:statusCode 200;
+	op:price <http://localhost:9000/devdata/price2.ttl>, <http://localhost:9000/devdata/price1.ttl> .
