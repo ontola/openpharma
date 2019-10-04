@@ -1,5 +1,6 @@
 import ErrorResource from './ErrorResource'
 import Medicine from './op/Medicine'
+import PricePreview from './op/PricePreview'
 import Person from './foaf/Person'
 import PersonalProfileDocument from './foaf/PersonalProfileDocument'
 import PersonPreviewList from './foaf/PersonPreviewList'
@@ -17,6 +18,7 @@ export default [
   ...Medicine,
   ...Person,
   ...PersonPreviewList,
+  ...PricePreview,
   ...PersonalProfileDocument,
   ...Resource,
   ...ResourceBrowserList,

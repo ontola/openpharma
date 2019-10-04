@@ -12,7 +12,7 @@ const styles = {
 const Medicine = ({
   hasPhoto,
   inbox,
-  knows,
+  price,
   name,
   organizationName,
   storage,
@@ -47,10 +47,10 @@ const Medicine = ({
         </Link>
       </PropertyDisplayRow>
     )}
-    {knows && knows.length > 0 && (
+    {price && price.length > 0 && (
       <PreviewList>
-        <b>Knows</b>
-        {knows.map((iri) => (
+        <b>price</b>
+        {price.map((iri) => (
           <LinkedResourceContainer key={iri.value} subject={iri} />
         ))}
       </PreviewList>
@@ -61,10 +61,10 @@ const Medicine = ({
 Medicine.type = NS.op('Medicine');
 Medicine.mapDataToProps = {
   // inbox: { label: new NamedNode('http://www.w3.org/ns/ldp#inbox')},
-  // knows: {
-  //   label: NS.foaf('knows'),
-  //   limit: Infinity,
-  // },
+  price: {
+    label: NS.op('price'),
+    limit: Infinity,
+  },
   name: { label: NS.op('name')},
   // hasPhoto: { label: vcard('hasPhoto')},
   // organizationName: { label: vcard('organization-name')},

@@ -1,13 +1,7 @@
 @prefix op: <http://openpharma.eu/ns/op/> .
-@prefix demo: <http://localhost:9000/demodata/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://localhost:9000/devdata/medicine.ttl> a op:Medicine ;
 	op:name """Oxycontine"""@nl ;
 	op:statusCode 200;
-	op:price <op:price> .
-
-demo:price a op:Price ;
-	op:standardPrice 1400;
-	op:occurenceDate "2002-09-24"^^xsd:date;
-	op:country <http://dbpedia.org/page/Netherlands> .
+	op:price <http://localhost:9000/devdata/price.ttl> .
