@@ -1,6 +1,6 @@
 {
   "name": "openpharma-viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compare prices for pharmaceuticals",
   "main": "index.js",
   "author": "Joep Meindertsm <joep@ontola.io>",
