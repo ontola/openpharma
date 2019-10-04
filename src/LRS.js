@@ -1,5 +1,5 @@
 import { createStore } from 'link-lib'
-import { Namespace, Statement } from 'rdflib';
+import { Namespace, Statement, Literal } from 'rdflib';
 
 import logging from './middleware/logging'
 import solidMiddleware from './middleware/solid';
@@ -14,6 +14,7 @@ const LRS = createStore({}, [
 LRS.namespaces.ldp = Namespace('http://www.w3.org/ns/ldp#');
 LRS.namespaces.vcard = Namespace('http://www.w3.org/2006/vcard/ns#');
 LRS.namespaces.op = Namespace('http://openpharma.eu/ns/op/');
+LRS.namespaces.dpb = Namespace('http://dbpedia.org/page/');
 export const NS = LRS.namespaces;
 
 // Fix an issue due to github pages serving html
@@ -39,6 +40,7 @@ LRS.addOntologySchematics([
 	new Statement(NS.rdfs('Bag'), NS.rdfs('subClassOf'), NS.rdfs('Resource')),
 	new Statement(NS.op('Medicine'), NS.rdfs('subClassOf'), NS.rdfs('Resource')),
 	new Statement(NS.op('Medicine'), NS.rdfs('subClassOf'), new NamedNode('http://www.w3.org/2007/ont/link#Document')),
+	new Statement(NS.dpb('Netherlands'), NS.rdfs('label'), new Literal("joe")),
 	// new Statement(NS.op('medicine.ttl'), NS.owl('sameAs'), NS.op('medicine')),
 	// new Statement(Namespace("https://fletcher91.github.io/link-minesweeper/")('MinesweeperGame'), NS.rdfs('subClassOf'), NS.rdfs('Bag')),
 ])

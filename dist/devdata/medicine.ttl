@@ -4,4 +4,4 @@
 <http://localhost:9000/devdata/medicine.ttl> a op:Medicine ;
 	op:name """Oxycontine"""@nl ;
 	op:statusCode 200;
-	op:price <http://localhost:9000/devdata/price.ttl> .
+	op:price <http://localhost:9000/devdata/price2.ttl>, <http://localhost:9000/devdata/price1.ttl> .

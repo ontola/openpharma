@@ -17,8 +17,8 @@ LRS.registerAll(views);
 
 const App = () => {
   const Text = ({ location }) => {
-    const resource = new URLSearchParams(location.search).get('resource');
 
+    const resource = new URLSearchParams(location.search).get('resource') || "http://localhost:9000/devdata/medicine.ttl";
     if(!resource) {
       return (
         <p
@@ -45,6 +45,7 @@ const App = () => {
   return (
     <RenderStoreProvider value={LRS} >
       <BrowserRouter basename={pathname.endsWith('/') ? pathname.slice(0, -1) : pathname}>
+        <h1>OpenPharma.eu</h1>
         <FileSelector />
         <Switch>
           <Route key="resource" path="*" component={Text} />

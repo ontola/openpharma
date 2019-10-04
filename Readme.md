@@ -12,5 +12,7 @@ We hebben hiervoor een ontologie gemaakt, waarvan de basis [hier te zien is](/On
 // Install dependencies
 yarn
 // Run dev environment
-yarn start
+yarn dev
 ```
+
+Ga naar [`http://localhost:9000/?resource=http://localhost:9000/devdata/medicine.ttl`](http://localhost:9000/?resource=http://localhost:9000/devdata/medicine.ttl)

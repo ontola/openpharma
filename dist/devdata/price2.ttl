@@ -1,0 +1,7 @@
+@prefix op: <http://openpharma.eu/ns/op/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:9000/devdata/price2.ttl> a op:Price ;
+	op:standardPrice 1200;
+	op:occurenceDate "2012-09-24"^^xsd:date;
+	op:country <http://dbpedia.org/page/Germany> .

@@ -49,7 +49,7 @@ const Medicine = ({
     )}
     {price && price.length > 0 && (
       <PreviewList>
-        <b>price</b>
+        <b>Prijzen</b>
         {price.map((iri) => (
           <LinkedResourceContainer key={iri.value} subject={iri} />
         ))}

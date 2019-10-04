@@ -1,7 +1,7 @@
 @prefix op: <http://openpharma.eu/ns/op/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://localhost:9000/devdata/price.ttl> a op:Price ;
+<http://localhost:9000/devdata/price1.ttl> a op:Price ;
 	op:standardPrice 1400;
 	op:occurenceDate "2002-09-24"^^xsd:date;
 	op:country <http://dbpedia.org/page/Netherlands> .
