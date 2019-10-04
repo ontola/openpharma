@@ -1,22 +1,24 @@
 {
-  "name": "link-mash-app-boilerplate",
+  "name": "openpharma-viewer",
   "version": "1.0.0",
-  "description": "A boilerplate to set up link apps which can be run stand-alone and loaded as plugins",
+  "description": "Compare prices for pharmaceuticals",
   "main": "index.js",
-  "author": "Fletcher91 <thom@ontola.io>",
+  "author": "Joep Meindertsm <joep@ontola.io>",
   "license": "GPL-3.0-or-later",
   "private": false,
   "applicationURL": {
-    "development": "http://localhost:8000/",
-    "production": "<enter the url your application will be run from>"
+    "development": "http://localhost:9000/",
+    "production": "https://openpharma.eu"
   },
   "scripts": {
     "build": "yarn build:bundle && yarn build:extension",
     "build:bundle": "webpack",
     "build:extension": "webpack --config webpack.umd.config.js",
-    "deploy": "gh-pages -d ./dist"
+    "deploy": "gh-pages -d ./dist",
+    "dev": "webpack-dev-server --hot"
   },
   "dependencies": {
+    "//": "=1.0.0-rc4.5",
     "@material-ui/core": "^4.3.2",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.3.0",
@@ -26,7 +28,6 @@
     "http-status-codes": "^1.3.0",
     "link-lib": "=1.0.0-rc2-solid",
     "link-rdflib": "npm:link-rdflib@0.19.1-20190124T144209",
-    "//": "=1.0.0-rc4.5",
     "link-redux": "=1.0.0-rc2",
     "rdflib": "npm:link-rdflib@0.19.1-20190124T144209",
     "react": "^16.9.0",
@@ -49,7 +50,8 @@
     "jest": "^24.9.0",
     "solid-auth-client": "^2.3.0",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.8.2"
   },
   "eslintConfig": {
     "parserOptions": {

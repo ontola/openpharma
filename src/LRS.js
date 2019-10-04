@@ -11,6 +11,7 @@ const LRS = createStore({}, [
 
 LRS.namespaces.ldp = Namespace('http://www.w3.org/ns/ldp#');
 LRS.namespaces.vcard = Namespace('http://www.w3.org/2006/vcard/ns#');
+LRS.namespaces.op = Namespace('http://openpharma.eu/ns/op/');
 export const NS = LRS.namespaces;
 
 // Fix an issue due to github pages serving html
@@ -28,6 +29,7 @@ LRS.api.registerTransformer(
  */
 LRS.addOntologySchematics([
 	new Statement(NS.rdfs('Bag'), NS.rdfs('subClassOf'), NS.rdfs('Resource')),
+	new Statement(NS.op('Medicine'), NS.rdfs('subClassOf'), NS.rdfs('Resource')),
 	// new Statement(Namespace("https://fletcher91.github.io/link-minesweeper/")('MinesweeperGame'), NS.rdfs('subClassOf'), NS.rdfs('Bag')),
 ])
 LRS.api.accept.default = "text/turtle"
