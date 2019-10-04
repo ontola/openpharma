@@ -4,6 +4,8 @@ OpenPharma.eu a web applicatie to provide insight into how costs of pharmaceutic
 
 This app was a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
 
+[Demo](https://ontola.github.io/openpharma/).
+
 ## Why?
 
 This application provides decision makers and politicians with overviews of how pharmaceutical pricing differs between (EU) countries.
@@ -40,6 +42,7 @@ Modify the `/dist/devdata/` files to change local mock data.
 ## Credits
 
 Created during Accountability Hack 2019 @ Tweede Kamer by [Ontola](https://ontola.io).
+As a hackathon project, don't expect too much :)
 
 - Jurrian Tromp
 - Thom van Kalkeren
