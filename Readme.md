@@ -22,12 +22,12 @@ This repo does the rendering, using [link](https://github.com/fletcher91/link-li
 
 ## Usage
 
-```sh
-// Clone this repo
+```bash
+# Clone this repo
 git clone git@github.com:ontola/openpharma.git && cd openpharma
-// Install dependencies
+# Install dependencies
 yarn
-// Run dev environment
+# Run dev environment
 yarn dev
 ```
 
