@@ -22,7 +22,15 @@ export const generateGraphData = (prices) => {
           time: {
               unit: 'month'
           }
-      }]
+      }],
+      yAxes: [{
+        ticks: {
+            // Include a dollar sign in the ticks
+            callback: function(value, index, values) {
+                return '$' + value;
+            }
+        }
+    }]
     }
   },
   datasets: Object.keys(prices).map(countryIRI => {

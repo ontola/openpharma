@@ -8,9 +8,11 @@ import Link from '../../components/Link';
 const styles = {
 };
 
+export const priceStringFunc = (price) => `€${price.substring(0, price.length-2)}.${price.slice(-2)}`
+
 const PricePreview = ({ standardPrice, occurenceDate, country }) => {
 
-  const priceString = `€${standardPrice.value.substring(0, standardPrice.value.length-2)}.${standardPrice.value.slice(-2)}`
+  const priceString = priceStringFunc(standardPrice.value);
 
   let countrycode = null;
   switch (country.value) {
