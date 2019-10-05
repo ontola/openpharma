@@ -1,13 +1,14 @@
 # OpenPharma
 
-[OpenPharma.eu](https://openpharma.eu) is aims to provide insight into how costs of pharmaceuticals differ in various EU countries.
+[OpenPharma.eu](https://openpharma.eu) aims to provide insight into how costs of pharmaceuticals differ in various EU countries.
 
 This app was a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
 
 ## Why?
 
-This application provides decision makers and politicians with overviews of how pharmaceutical pricing differs between (EU) countries.
-This is useful, because it improves the bargaining positions of these officials, which in turn could help drive pharma prices down.
+Pharmaceutical prices in the EU are determined in a negotiation process between governments and pharmaceutical companies.
+During these negotiations, governments look at prices in comparable countries to enhance their bargaining position. 
+This project provides standardized data, APIs and a web application that shows how pharmaceutical pricing differs between (EU) countries.
 
 ## How it works
 
