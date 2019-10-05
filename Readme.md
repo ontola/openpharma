@@ -1,6 +1,6 @@
 # OpenPharma
 
-[OpenPharma.eu](https://openpharma.eu) aims to provide insight into how costs of pharmaceuticals differ in various EU countries.
+[OpenPharma.eu](http://openpharma.eu) aims to provide insight into how costs of pharmaceuticals differ in various EU countries.
 
 This app was a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
 
