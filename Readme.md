@@ -1,25 +1,24 @@
 # OpenPharma
 
-OpenPharma.eu a web applicatie to provide insight into how costs of pharmaceuticals differ in various EU countries.
+[OpenPharma.eu](https://openpharma.eu) is aims to provide insight into how costs of pharmaceuticals differ in various EU countries.
 
 This app was a submission for the [Accountability Hackathon 2019](https://accountabilityhack.nl).
-
-[Demo](https://ontola.github.io/openpharma/).
 
 ## Why?
 
 This application provides decision makers and politicians with overviews of how pharmaceutical pricing differs between (EU) countries.
 This is useful, because it improves the bargaining positions of these officials, which in turn could help drive pharma prices down.
 
-## Ontology
+## How it works
 
-It uses the (quirky, hacky) [OpenPharma Ontology](/Ontology.md).
-
-## About the tech
-
-First, we convert various datasets to RDF / Linked Data.
-We create Medicine resources and Price resources.
+First, we converted various pharmaceutical datasets to RDF / [Linked Data](https://ontola.io/what-is-linked-data/).
+We create Medicine resources and Price resources, conforming to our hacky [OpenPharma ontology](/Ontology.md).
+The prices are standardized to make them comparable.
+These resources are stored as [Linked Delta](https://github.com/ontola/linked-delta/) events.
+These are added to a Kafka topic and finally replayed by a linked-delta loader, which 
 These are made available at the REST endpoitn `https://id.openpharma.eu/${code}`.
+
+### Display
 This repo does the rendering, using [link](https://github.com/fletcher91/link-lib/) and react.
 
 ## Usage
@@ -42,7 +41,8 @@ Modify the `/dist/devdata/` files to change local mock data.
 ## Credits
 
 Created during Accountability Hack 2019 @ Tweede Kamer by [Ontola](https://ontola.io).
-As a hackathon project, don't expect too much :)
+
+Since this is a hackathon project built in a couple of hours, don't expect too much :)
 
 - Jurrian Tromp
 - Thom van Kalkeren
